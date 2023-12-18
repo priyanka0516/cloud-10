@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+/* css styles for whole pages */
+:root {
+  --primary-color: #1aa3ff;
+  --link-active: #0085dd;
+  --heading-color: ;
+  --btn-primary-bg: ;
+  --btn-secondary-bg: ;
+  --font-name: "Cabin", sans-serif;
+  --btn-clr: #eb3300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  /* color: var(--link-color); */
+}
+section{
+  padding: 60px 0px;
+}
+
+.container{
+  width: 1140px;
+  padding: 0px 15px;
+  margin: auto;
+}
+
+.description{
+  /* color: var(--small-text-color); */
+  line-height: 30px;
+  font-size: .9rem;
+  padding: 5px;
+}
+.subtitle{
+  font-size: 2rem;
+  color: rgb(19, 67, 156);
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px){
+  section{
+    padding: 30px 0px;
+
+  }
+}
+
+
+/* lms */
+.mobile-home-banner {
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  background-color: #063970;
+}
+
+.top-text-banner {
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 45px;
+  text-align: left;
+  color: #fff;
+  z-index: 999;
+}
+ .wrapper-heading:after {
+   width: 100px;
+   height: 2px;
+   display: block;
+   content: "";
+   position: relative;
+   margin-top: 10px;
+   left: 50%;
+   margin-left: -50px;
+   align-items: start;
+   z-index: 1;
+   background-color: #0070ad;
+ }
+
+ .wrapper-heading:before {
+   width: 30px;
+   height: 6px;
+   display: block;
+   content: "";
+   align-items: start;
+   position: absolute;
+   bottom: 18px;
+   left: 50%;
+   margin-left: -15px;
+   background: #0070ad;
+   z-index: 2;
+   border-radius: 0px;
+   animation-name: LeftToright;
+   animation-duration: 4.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+ }
+
+ @keyframes LeftToright {
+   0% {
+     transform: translateX(30px);
+   }
+
+   100% {
+     transform: translateX(-15px);
+   }
+ }
+.my-3 {
+  color: #fff;
+  font-size: 14px;
+  z-index: 999;
+  line-height: 25px;
+  text-align: left;
+}
+
+.mobile-banner-left {
+  /* padding: 110px 0px; */
+  position: relative;
+}
+
+#animated {
+  padding: 0px;
+  height: auto;
+  width: 100%;
+  /* animation: up-down 2s ease-in-out infinite alternate-reverse both; */
+}
+
+.lms-about {
+  position: relative;
+  padding: 20px 0px;
+}
+
+.right-lms h3 {
+  font-size: 35px;
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+  padding: 15px 0 0;
+}
+
+.right-lms p {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: left;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.lms-features {
+  position: relative;
+  padding: 20px 0px;
+}
+
+.srv-bx1 {
+  margin: 25px 0;
+  display: flex;
+}
+
+.lms-text {
+  text-align: left;
+}
+
+.lms-text h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.lms-features p {
+  margin: 5px 0 0 !important;
+  color: #000;
+  line-height: 30px;
+  font-size: 14px !important;
+}
+
+.read_link a:hover {
+  color: #fff !important;
+}
+strong {
+  color: #14a3d1;
+}
+    .wrapper-heading {
+      padding: 20px 0px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: #000;
+      letter-spacing: 0.5px;
+      margin-bottom: 0px;
+      position: relative;
+      animation: fade-bottom 1.5s ease-in;
+    }
+.lms-text p {
+  margin: 5px 0 0 !important;
+  color: #000;
+  line-height: 30px;
+  font-size: 14px !important;
+}
+
+.number-text {
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+#gitbutton {
+  background: #0070ad;
+  border-radius: 31px;
+  color: #fff;
+  text-shadow: none;
+  font-weight: 700;
+  padding: 10px 26px;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: auto;
+  letter-spacing: -0.5px;
+  border: 2px solid #ffffff;
+  margin: 0px;
+}
+
+.right-lms {
+  text-align: left;
+}
+
+#gitbutton:hover {
+  background-color: #0070ad;
+  color: #fff;
+  border: 2px solid #0070ad !important;
+}
+@media (min-width:320px) and (max-width:767px) {
+
+  /* lms res start */
+  .mobile-home-banner .row {
+    flex-direction: column-reverse;
+  }
+
+  .top-text-banner {
+    font-size: 28px;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .my-3 {
+    margin: 10px 10px 10px 10px;
+  }
+
+  .mobile-banner-left {
+    padding: 10px 0px;
+  }
+
+  /* lms end */
+}
